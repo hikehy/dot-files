@@ -27,10 +27,9 @@
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}%",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -72,18 +71,18 @@
        "format-ru": "RU"
     },
     "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]
+      "states": {
+        "warning": 30,
+        "critical": 15
     },
-    "battery#bat2": {
+      "format": "{icon} {capacity}%",
+      "format-full": "{icon} {capacity}%",
+      "format-charging": "<span color='#2ecc71'>󰂄 </span> {capacity}%",
+      "format-plugged": "<span color='#3498db'> </span> {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["󰁺","󰁼","󰁾","󰂀","󰁹"]
+    },    
+"battery#bat2": {
         "bat": "BAT2"
     },
     "clock": {

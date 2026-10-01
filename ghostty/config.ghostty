@@ -1,0 +1,17 @@
+background-opacity = 0.64
+background-blur = true
+
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+window-padding-color = extend
+
+# 1. Enable Times New Roman as primary, Symbols Nerd Font as backup
+font-family = "Times"
+font-family = "Symbols Nerd Font"
+
+
+# Manually tweak spacing if it still looks compressed or stretched
+# Negative values tighten space; positive values expand it
+adjust-cell-width = -1
+adjust-cell-height = 5

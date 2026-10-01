@@ -1,15 +1,14 @@
 * {
-    /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    transition: background-color .3s ease-out;
+    /* Replace with your specific font name, but add "Symbols Nerd Font" after it */
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", times;
+    font-size: 14px;
 }
 
 window#waybar {
     background: rgba(26, 27, 38, 0);
     color: #f4eddd;
     font-family: 
-        SpaceMono Nerd Font,
+        Times,
         feather;
     transition: background-color .5s;
 }
@@ -77,7 +76,7 @@ window#waybar {
 #workspaces button {
   background: transparent;
   font-family:
-    SpaceMono Nerd Font,
+    Times,
     feather;
   font-weight: 900;
   font-size: 13pt;
