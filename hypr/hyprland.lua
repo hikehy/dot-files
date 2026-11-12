@@ -25,7 +25,7 @@ hl.monitor({
   output   = "",
   mode     = "preferred",
   position = "auto",
-  scale    = "auto",
+  scale    = "1.20",
 })
 
 
@@ -59,7 +59,7 @@ end)
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
 hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XCURSOR_THEME","Moga-Neon-Cyan")
 
 
 -----------------------
@@ -245,8 +245,8 @@ hl.gesture({
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
-  name        = "epic-mouse-v1",
-  sensitivity = -0.5,
+  name        = "glorious-model-d",
+  sensitivity = -0.75,
 })
 
 
@@ -312,7 +312,7 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
-
+hl.bind("SUPER + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
@@ -361,4 +361,10 @@ hl.window_rule({
 
   move  = "20 monitor_h-120",
   float = true,
+})
+
+hl.config({
+  xwayland = {
+    force_zero_scaling = true
+  },
 })

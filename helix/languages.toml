@@ -1,0 +1,16 @@
+[[language]]
+name = "java"
+language-servers = [ "jdtls" ]
+
+#[language-server.jdtls]
+#command = "/run/current-system/sw/bin/jdtls" # Uses the exact binary string name supplied by nixpkgs
+#
+[[language]]
+name = "c"
+language-servers = [ "clangd" ]
+
+[language-server.clangd]
+command = "clangd"
+args = ["--query-driver=**/zig"]
+
+

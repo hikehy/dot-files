@@ -1,8 +1,8 @@
 {
     "custom/arch": {
-        "format": "󰣇",
+        "format": "",
         "tooltip": true,
-        "tooltip-format": "btw"
+        "tooltip-format": "Config File OS"
     },
 
 
